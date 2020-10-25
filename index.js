@@ -81,7 +81,6 @@ app.get("/api", async(req,res)=>{
 		}catch(e){
 			return res.json({error: true, code: -5, message: `Unknown error. Contact me@deadfade.cf. Server response: ${e}`});
 		}
-		console.log(require("util").inspect(videos, {depth:1488}));
 	}
 	return res.json({error: true, code: -2, message: "unknown action."});
 });
